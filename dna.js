@@ -4,7 +4,7 @@ function Complite()
       let elem = document.formDNA.DNA.value;
       let array = elem.split(/(?=[A-Z])/);
       
-      if (array == false) {
+      if (!array) {
         alert('Введите значения');
       } else {
         for (let index = 0; index < array.length; index++) {
